@@ -182,26 +182,63 @@ width: 100%;
 
 @media (max-width: 600px) {
 
+    /* 🌐 ESCENA */
+    #scene {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* 👦 CARTMAN */
+    #cartman {
+        width: 95px;
+        bottom: 15px; /* 🔥 lo sube */
+    }
+
+    /* ☁️ NUBE */
     .big-bubble {
-        padding: 30px 20px;
-        border-radius: 30px;
+        width: 92%;
+        max-width: none;
+
+        top: 43%; /* 🔥 más arriba */
+        transform: translate(-50%, -50%);
+
+        padding: 25px 18px;
+        border-radius: 35px;
+
+        min-height: auto;
+        height: auto;
+
+        line-height: 1.6; /* 🔥 evita que se corte */
+        overflow-y: auto; /* 🔥 permite scroll si se necesita */
+    }
+
+    /* 📝 TEXTO */
+    .line {
+        line-height: 1.2;
     }
 
     .line span {
-        font-size: clamp(1rem, 5vw, 1.8rem);
+        font-size: clamp(0.95rem, 4.8vw, 1.5rem);
     }
 
-    #cartman {
-        width: 100px;
-        bottom: 20px;
+    /* 🔁 BOTÓN */
+    #repeatBtn {
+        bottom: 15px;
+        right: 15px;
+
+        padding: 8px 14px;
+        font-size: 12px;
+
+        z-index: 5; /* 🔥 asegura que se vea */
     }
 
+    /* ✨ EFECTOS */
     .mujer,
     .besos,
     .amanecer,
     .noche {
-        width: 80px;
-        opacity: 0.1;
+        width: 70px;
+        opacity: 0.15;
     }
 }
 
